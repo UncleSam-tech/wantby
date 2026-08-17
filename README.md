@@ -4,6 +4,8 @@
 
 WantBy is a private, offline-first shopping and acquisition list. It turns quick sentences such as “charger, toothpaste and new shoes by Wednesday” into concrete, dated items and keeps everything on the current device.
 
+**Live app:** [wantby.vercel.app](https://wantby.vercel.app)
+
 ## Highlights
 
 - Installable Progressive Web App for Android and desktop
