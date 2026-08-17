@@ -69,8 +69,8 @@ export function relativeDayLabel(key: string | null): 'overdue' | 'today' | 'upc
   return 'upcoming'
 }
 
-export function nextWeekday(targetDay: number, includeToday = false): string {
-  const date = new Date()
+export function nextWeekday(targetDay: number, includeToday = true, referenceDate = new Date()): string {
+  const date = new Date(referenceDate)
   let delta = (targetDay - date.getDay() + 7) % 7
   if (delta === 0 && !includeToday) delta = 7
   date.setDate(date.getDate() + delta)

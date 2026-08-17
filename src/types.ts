@@ -44,4 +44,5 @@ export interface ParsedWant {
   quantity: string
   dueDate: string | null
   reminderTime: string | null
+  categoryHint: 'general' | 'home' | 'groceries'
 }

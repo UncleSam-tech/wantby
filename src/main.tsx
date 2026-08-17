@@ -5,7 +5,10 @@ import '@fontsource-variable/dm-sans/wght.css'
 import '@fontsource-variable/manrope/wght.css'
 import App from './App'
 
-registerSW({ immediate: true })
+const updateServiceWorker = registerSW({
+  immediate: true,
+  onNeedRefresh: () => void updateServiceWorker(true)
+})
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
